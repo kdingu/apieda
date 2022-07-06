@@ -8,7 +8,7 @@ import Contact from "../components/contact";
 const Index = () => {
     return (
         <Layout>
-            <Headline button variant={'primary'} />
+            <Headline buttonText={'TEST TEMP Temp temp!'} button variant={'primary'} />
             <div className="mt-60"></div>
             <Presentation />
             <div className="mt-60"></div>
