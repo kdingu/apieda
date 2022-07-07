@@ -9,9 +9,9 @@ const Index = () => {
     return (
         <Layout>
             <Headline button variant={'primary'} />
-            <div className="mt-60"></div>
+            <div className="mt-40"></div>
             <Presentation />
-            <div className="mt-60"></div>
+            <div className="mt-40"></div>
             <Headline button={false} variant={'secondary'} />
             <div className="mt-40"></div>
             <Services />
