@@ -10,10 +10,10 @@ const Headline = ({
                   }) => {
     return (
         <div className={`font-black`}>
-            <h1 className={`leading-tight text-7xl ${variant === 'primary' ? 'text-green' : 'text-white'}`}>{headline}</h1>
-            <h2 className={`leading-tight text-7xl text-slate-500 ${variant === 'primary' ? 'opacity-70' : 'opacity-50'}`}>{description}</h2>
+            <h1 className={`lg:leading-tight text-center mb-3 text-5xl sm:text-left lg:text-7xl ${variant === 'primary' ? 'text-green' : 'text-white'}`}>{headline}</h1>
+            <h2 className={`lg:leading-tight text-center text-xl sm:text-left lg:text-7xl text-slate-500 ${variant === 'primary' ? 'opacity-70' : 'opacity-50'}`}>{description}</h2>
             {button && (
-                <div className={`mt-14`}>
+                <div className={`mt-5 flex justify-center sm:block sm:mt-8`}>
                     <Button animated={true} size={'4xl'}>{buttonText}</Button>
                 </div>
             )}

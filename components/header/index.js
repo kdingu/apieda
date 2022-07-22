@@ -26,7 +26,7 @@ const Header = ({fixed = false}) => {
     }, [])
 
     return (
-        <nav className={`px-6 py-3 flex justify-between items-center ${fixed ? 'fixed w-full' : ''}`}>
+        <nav className={`z-50 bg-black bg-opacity-70 px-6 py-3 flex justify-between items-center ${fixed ? 'fixed w-full' : ''}`}>
             <div className={`flex items-center gap-3`}>
                 <Image width={50} height={50} src={`/logo/apieda_logo.svg`} />
                 <span style={{ opacity }} className={`transition text-xl font-bold uppercase`}>apieda</span>

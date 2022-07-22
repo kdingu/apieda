@@ -4,7 +4,7 @@ const Button = ({size = 'sm', animated = false, children}) => {
     const sizeClasses = useMemo(() => {
         switch (size) {
             case '4xl':
-                return 'px-14 py-7 text-5xl'
+                return 'px-10 py-5 text-3xl lg:px-14 lg:py-7 lg:text-5xl'
             case '2xl':
                 return 'px-12 py-5 text-4xl'
             case 'xl':

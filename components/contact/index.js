@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const SPARKPOST_KEY = process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY;
 
 const generalFormClasses = `bg-black rounded-xl p-3`;
-const inputClasses = `text-white border border-gray-400`;
+const inputClasses = `text-white border border-gray-400 col-span-2 sm:col-span-1`;
 const textareaClasses = `text-white border border-gray-400 col-span-2`;
 
 const AnimatedButtonContent = ({ loading }) => {
@@ -155,7 +155,7 @@ const Contact = () => {
 	return (
 		<div className={`relative`}>
 			<HeadingText text={"Discuss with us."} />
-			<form className={`bg-white bg-opacity-10 grid grid-cols-2 p-10 gap-3 rounded-xl relative overflow-hidden`} onSubmit={handleSubmit(onSubmit)}>
+			<form className={`bg-white bg-opacity-10 grid grid-cols-2 p-4 sm:p-10 gap-3 rounded-xl relative overflow-hidden`} onSubmit={handleSubmit(onSubmit)}>
 				<input
 					className={`${generalFormClasses} ${inputClasses} ${errors["firstname"] ? "border-4 border-red-600" : ""}`}
 					type="text"
@@ -170,7 +170,7 @@ const Contact = () => {
 				/>
 				<input className={`${generalFormClasses} ${inputClasses} ${errors["email"] ? "border-4 border-red-600" : ""}`} type="email" placeholder="Email" {...register("email", { required: true })} />
 				<input className={`${generalFormClasses} ${inputClasses} ${errors["mobile"] ? "border-4 border-red-600" : ""}`} type="tel" placeholder="Mobile" {...register("mobile", {})} />
-				<input className={`${generalFormClasses} ${inputClasses} ${errors["company"] ? "border-4 border-red-600" : ""} col-span-2`} type="text" placeholder="Company" {...register("company", {})} />
+				<input className={`${generalFormClasses} ${inputClasses} ${errors["company"] ? "border-4 border-red-600" : ""} sm:col-span-2`} type="text" placeholder="Company" {...register("company", {})} />
 				<textarea
 					rows={8}
 					placeholder={"Message"}
@@ -189,7 +189,7 @@ const Contact = () => {
 
 				<SuccessOverlay mailSuccess={mailSuccess} callback={handleResetForm} />
 			</form>
-			<img className={"absolute -top-10 opacity-20 right-0"} alt={"logo"} src={"logo/apieda_mini_logo_mini.svg"} />
+			<img className={"hidden sm:block absolute -top-10 opacity-20 right-0"} alt={"logo"} src={"logo/apieda_mini_logo_mini.svg"} />
 		</div>
 	);
 };
