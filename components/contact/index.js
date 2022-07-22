@@ -189,7 +189,7 @@ const Contact = () => {
 
 				<SuccessOverlay mailSuccess={mailSuccess} callback={handleResetForm} />
 			</form>
-			<img className={"absolute -top-10 opacity-20 right-0"} alt={"logo"} src={"http://localhost:3000/logo/apieda_mini_logo_mini.svg"} />
+			<img className={"absolute -top-10 opacity-20 right-0"} alt={"logo"} src={"logo/apieda_mini_logo_mini.svg"} />
 		</div>
 	);
 };
